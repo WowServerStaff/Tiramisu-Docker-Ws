@@ -1,9 +1,9 @@
 import json
 
 from flask import Flask
-from appflask import AppFlask
 
 from src.controllers import *
+from src.services import *
 
 injector = Provider()
 
