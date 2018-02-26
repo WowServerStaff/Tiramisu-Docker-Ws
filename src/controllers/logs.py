@@ -12,7 +12,8 @@ class LogsController(AbstractController):
 
 	def getById(self, identifier):
 		container = self.dockerClient.containers.get(identifier)
-		return super(ContainersController, self).buildResponse(container.logs())
+		logs = container.logs().decode("utf-8")
+		return super(LogsController, self).buildResponse(logs)
 
 	def get(self):
 		return false
