@@ -1,3 +1,10 @@
+"""
+Entrypoint of the application.
+
+Register all the classes (controllers, services)
+and run the app on specified port.
+"""
+
 import json
 
 from flask import Flask
