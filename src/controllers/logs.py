@@ -1,5 +1,6 @@
 """
 Docker logs controller.
+Extends the abstract controller.
 """
 
 from .abstract import *
