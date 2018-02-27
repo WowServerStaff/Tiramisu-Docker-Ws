@@ -1,3 +1,10 @@
+"""
+Class extending Flask.
+
+Called when the app need Flask, it
+contains the CORS implementation
+"""
+
 from flask import Flask
 from flask_cors import CORS, cross_origin
 
